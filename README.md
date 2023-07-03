@@ -1,0 +1,2 @@
+# MinorProjectStudentManagement
+a minor 
