@@ -1,0 +1,22 @@
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Build artifacts
+/target/
+/bin/
+/build/
+
+# IDE-specific files
+.metadata/
+*.iml
+.idea/
+
+# Dependency management files (Maven, Gradle, etc.)
+/dependency-reduced-pom.xml
+/.classpath
+/.factorypath
+/.settings/
+/*.launch
+/*.jardesc
