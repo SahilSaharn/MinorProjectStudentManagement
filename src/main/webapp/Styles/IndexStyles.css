@@ -39,34 +39,74 @@ a{
 
 body{
 	background-color: var(--black);
-	color: var(--ngreen);	
+	color: white;
 }
 
-.apply-font{
+.app-font{
 	font-family: 'Courier Prime', monospace;
 }
 
 .main-cont{
-	height: 100vh;
 	display: flex;
+	width: 100%;
+	height: 100vh;
 	justify-content: center;
 	align-items: center;
+	border: 3px solid var(--ngreen);
+	background-image: url(../SvgBackgrounds/CircuitBg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
+.main-cont > div{
+	/* outline: 2px solid  black; */
+	width: 70%;
+	min-width: 290px;
+	max-width: 1900px;
+	margin: 0 auto;
+	padding: clamp( .3em, 5vw , 1em );
+}
 
-.main-cont > div > h1{
-	margin-block: clamp(.1rem, 1vw , 1.5rem);
+.main-cont>div>h2{
+	color: var(--ngreen);
 	font-size: var(--font-size-xl);
+	margin-block: clamp(.3rem , 10vw , 1rem) ;
 }
 
-.main-cont > div > p{
-	color:var(--lgreen);
+.main-cont>div>p{
+	color: var(--lgreen);
+	margin-block: clamp(.5rem , 3vw , 2rem);
 }
 
-.links-cont{
-	margin :clamp(.7rem, 1.5vw , 1.5rem) auto;
+.btn-cont> :nth-child(1) {
+	margin-right: clamp(1rem, 3vw, 4rem);
+}
+.btn-cont> :nth-child(2) {
+	margin-left: clamp(1rem, 3vw, 4rem);
 }
 
+.btn-design{
+	
+	display: inline-block;
+	outline: 0;
+	text-align: center;
+	cursor: pointer;
+	padding: .5rem clamp(.7em, 2vw ,1.5em);
+	border: 0;
+	color: #fff;
+	font-size: 17.5px;
+	border: 2px solid transparent;
+	border-color: var(--lgreen);
+	color: var(--lgreen);
+	background: transparent;
+	font-weight: 800;
+	line-height: 30px;
+	transition: background,color .2s ease-in-out;
+	
+}
 
-
-
+.btn-design:hover {
+	background-color: var(--lgreen);
+	color: var(--black);
+	box-shadow: 0px 0px 20px var(--lgreen);
+}
