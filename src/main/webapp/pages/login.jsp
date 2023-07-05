@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../Styles/IndexStyles.css">
     <link rel="stylesheet" href="../Styles/loginStyles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <div class="main-cont app-font">
@@ -23,7 +24,7 @@
                 <!-- our Email field  -->
                 <div class="input-fields">
                     <label for="uemail"> Email > </label>
-                    <input type="text" id="uemail" name="userEmail" spellcheck="false" >
+                    <input type="text" id="uemail" name="userEmail" spellcheck="false" autocomplete="off" required >
                 </div>
 
                 <!-- our Phone Number  -->
@@ -34,11 +35,20 @@
 
                 <div class="input-fields">
                     <label for="upass"> Password > </label>
-                    <input type="password" id="upass" name="userPass" spellcheck="false" >
+                    <div style="position:relative;" >
+                    	<input type="password" id="upass" name="userPass" spellcheck="false" autocomplete="off" required >
+                   		<button class="our-eye-icon" type="button" onclick="toggleShowPass()" >
+                    		<span class="material-symbols-outlined">
+								visibility
+							</span>
+						</button>
+                    </div>
                 </div>
 
                 <div >
-                    <button class="btn-design app-font" >LogIn!</button>
+                    <button class="btn-design app-font" >
+                    	LogIn!
+                    </button>
                 </div>
 
                 <p class="register-p" >Not a User ?  <a href="./signup.jsp">Register!</a> </p>
@@ -46,5 +56,6 @@
             </form>
         </div>
     </div>
+    <script type="text/javascript" src="../jsfiles/loginjs.js" ></script>
 </body>
 </html>

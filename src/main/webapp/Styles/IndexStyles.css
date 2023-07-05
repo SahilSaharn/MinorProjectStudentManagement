@@ -15,6 +15,7 @@
 	--drkGreen: #125c13;
 	--ngreen: #16FF00;
 	--lgreen: #3EC70B;
+    --ldarkGreen : #179619;
 }
 
 /*
@@ -25,16 +26,38 @@ ligh tgreen-3EC70B
 neon green- 16FF00
 */
 
-
-
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--black);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--ldarkGreen);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--drkGreen);
+  }
+
 a{
 	text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 body{
@@ -46,6 +69,7 @@ body{
 	font-family: 'Courier Prime', monospace;
 }
 
+ /* replace old one this with curr  */
 .main-cont{
 	display: flex;
 	width: 100%;
@@ -59,12 +83,13 @@ body{
 }
 
 .main-cont > div{
-	/* outline: 2px solid  black; */
+
 	width: 70%;
 	min-width: 290px;
 	max-width: 1900px;
-	margin: 0 auto;
-	padding: clamp( .3em, 5vw , 1em );
+	margin: 0px auto;
+    padding-block:clamp(1rem , 7vw , 4rem);
+    
 }
 
 .main-cont>div>h2{
@@ -78,12 +103,7 @@ body{
 	margin-block: clamp(.5rem , 3vw , 2rem);
 }
 
-.btn-cont> :nth-child(1) {
-	margin-right: clamp(1rem, 3vw, 4rem);
-}
-.btn-cont> :nth-child(2) {
-	margin-left: clamp(1rem, 3vw, 4rem);
-}
+
 
 .btn-design{
 	
