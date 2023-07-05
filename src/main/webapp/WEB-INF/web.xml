@@ -25,6 +25,16 @@
   <servlet-mapping>
 	  <servlet-name>LoginHandle</servlet-name>
 	  <url-pattern>/login-handle</url-pattern>
-  </servlet-mapping>	
+  </servlet-mapping>
+  
+   <servlet>
+	  <servlet-name> RegisterHandle</servlet-name>
+	  <servlet-class>HandleRequests.HandleRegisterAction</servlet-class>
+  </servlet> 
+  
+  <servlet-mapping>
+	  <servlet-name>RegisterHandle</servlet-name>
+	  <url-pattern>/register-handle</url-pattern>
+  </servlet-mapping>		
   
 </web-app>

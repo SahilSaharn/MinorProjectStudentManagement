@@ -14,7 +14,7 @@
         <div class="main-cont app-font" style="height:100%;" >
             <div class="signup-cont-holder" >
                 <h2>SignUp > </h2>
-                <form action="./signup.html" class="login-form" method="post" >
+                <form action="../register-handle" class="login-form" method="post" >
     
                     <!-- our Name field -->
                     <div class="input-fields">
@@ -25,7 +25,7 @@
                     <!-- our Email field  -->
                     <div class="input-fields">
                         <label for="uemail"> Email > </label>
-                        <input type="text" id="uemail" name="userEmail" spellcheck="false" autocomplete="off" required  >
+                        <input type="email" id="uemail" name="userEmail" spellcheck="false" autocomplete="off" required  >
                     </div>
     
                     <!-- our Phone Number  -->
