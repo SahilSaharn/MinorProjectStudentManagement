@@ -13,7 +13,7 @@
     <div class="main-cont app-font">
         <div>
             <h2>LogIn > </h2>
-            <form action="/timtam" class="login-form" method="post" >
+            <form action="../login-handle" class="login-form" method="post" >
 
                 <!-- our Name field -->
                 <!-- <div class="input-fields">
@@ -24,7 +24,7 @@
                 <!-- our Email field  -->
                 <div class="input-fields">
                     <label for="uemail"> Email > </label>
-                    <input type="text" id="uemail" name="userEmail" spellcheck="false" autocomplete="off" required >
+                    <input type="email" id="uemail" name="userEmail" spellcheck="false" autocomplete="off" required >
                 </div>
 
                 <!-- our Phone Number  -->
@@ -46,7 +46,7 @@
                 </div>
 
                 <div >
-                    <button class="btn-design app-font" >
+                    <button class="btn-design app-font" type="submit" >
                     	LogIn!
                     </button>
                 </div>

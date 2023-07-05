@@ -17,4 +17,14 @@
 	  <url-pattern>/test-servlet</url-pattern>
   </servlet-mapping>
   
+   <servlet>
+	  <servlet-name> LoginHandle </servlet-name>
+	  <servlet-class>HandleRequests.HandleLoginAction</servlet-class>
+  </servlet> 
+  
+  <servlet-mapping>
+	  <servlet-name>LoginHandle</servlet-name>
+	  <url-pattern>/login-handle</url-pattern>
+  </servlet-mapping>	
+  
 </web-app>
